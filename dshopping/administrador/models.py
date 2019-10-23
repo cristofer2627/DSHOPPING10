@@ -1,6 +1,4 @@
 from django.db import models
-from ckeditor.fields import RichTextField
-
 #from ckeditor.fields import RichTextField
 # Create your models here.
 
@@ -71,11 +69,10 @@ class Client(Gender,Country):
     class Meta:
         verbose_Client = 'Client'
         verbose_Clients_plural = 'Clients'
-    
     def __str__(self):
-        return self.'{0}{1}{2}'.format(self.lastname, ", ", self.firstname)
+        return self.title
 
-class Shopping(Product,Client):
+class shopping(Product,Client):
     id = models.AutoField(primary_key=True)
     id_product = models.ForeignKey(Product, on_delete=models.CASCADE)
     id_client = models.ForeignKey(Client, on_delete=models.CASCADE)
@@ -83,3 +80,4 @@ class Shopping(Product,Client):
     class Meta:
         abstract = True
 
+    
