@@ -84,7 +84,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dshopping',
+        'NAME': 'dshopping_cb',
         'USER': 'postgres',
         'PASSWORD': 'unicesmag',
         'HOST': 'localhost', #o localhost
