@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dshopping.apps.administrador',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,10 +83,10 @@ DATABASES = {
 '''
 DATABASES = {
     'default': {
-         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dshopping',
         'USER': 'postgres',
-        'PASSWORD': '12tienestos',
+        'PASSWORD': 'unicesmag',
         'HOST': 'localhost', #o localhost
         'PORT': '5432', #empty -> Default: 5432
     }
